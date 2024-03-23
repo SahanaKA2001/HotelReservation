@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<section class="panel">
+
+<div class="container p-3 col-md-4 offset-md-4 border">
+    <div class="header text-center"><h3>Admin Login</h3></div>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label><i class="fa fa-user">&nbsp;Admin Name</i></label>
+            <input type="text" class="form-control" [(ngModel)]="userName" name="userName" id="userName" required><br>
+
+            <label><i class="fa fa-eye">&nbsp;Password</i></label><br>
+            <input type="password" class="form-control" id="userPassword" [(ngModel)]="userPassword" name="userPassword" required><br>
+        </div>
+        <div class="form-group1 col-sm-offset-md-3">
+            <button type="submit" id="btnsubmit" class="btn btn-success mx-5"><i class="fa fa-check"> Login </i></button>
+
+            <button type="reset" id="btnreset" class="btn btn-danger"> <i class="fa fa-refresh"> Reset </i> </button><br>
+        </div>       
+    </form>
+    <div class="error-message" *ngIf="invalidCredentials">       
+    </div>   
+</div>
+</section>
+</body>
+</html>

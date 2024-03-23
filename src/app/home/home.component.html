@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking Dashboard</title>
+    <link rel="stylesheet" href="home.component.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <ul class="navbar-nav">
+            <!-- Your navigation items -->
+            <li class="nav item px-3">
+                <a class="nav-link">Home</a>
+            </li>
+    
+            <li class="nav item px-3">
+                <a class="nav-link" href="#nm">Gallary</a>
+            </li>
+    
+            <li class="nav item px-3">
+                <a class="nav-link" href="login">Admin Login</a>
+            </li>
+            <li class="nav item px-3">
+                <a class="nav-link" href="user-login">User Login</a>
+            </li>
+    
+            <li class="nav item px-3">
+                <a class="nav-link" href="registration">Registration</a>
+            </li>
+            <li class="nav item px-3">
+                <a class="nav-link" href="aboutus">About Us</a>
+            </li>
+            <li class="nav item px-3">
+                <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+            <li class="nav item px-3">
+                <a class="nav-link"  href="feedback">Feedback</a>
+            </li>
+        </ul>
+    </nav>
+    <br>
+
+    <marquee class = "marquee-heading" >
+        <h1>Welcome to Hotel Paradise!</h1>
+    </marquee>
+
+    <div class="image">
+        <img src="./assets/Homes.jpg" height="600" width="1240" alt="logo" />
+    </div>
+    <div class="gallery">
+        <!-- Your image gallery section -->
+        <h4>
+            <em><a name="nm"> </a></em>
+        </h4>
+        <a routerLink="/registration">
+            <img src="./assets/room12.jpg" height="200" width="200" alt="Room 1" />
+        </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a routerLink="/registration">
+            <img src="./assets/room20.jpg" height="200" width="200" alt="Room 2" />
+        </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a routerLink="/registration">
+            <img src="./assets/room13.jpg" height="200" width="200" alt="Room 3" />
+        </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a routerLink="/registration">
+            <img src="./assets/room14.jpg" height="200" width="200" alt="Room 4" />
+        </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a routerLink="/registration">
+            <img src="./assets/room15.jpg" height="200" width="200" alt="Room 5" />
+        </a><br>
+    </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  
+    <div class="gallery2">
+        <!-- Another section of the image gallery -->
+        <a routerLink="/registration">
+            <img src="./assets/room16.jpg" height="200" width="200" alt="Room 6" />
+        </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a routerLink="/registration">
+            <img src="./assets/room17.jpg" height="200" width="200" alt="Room 7" />
+        </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a routerLink="/registration">
+            <img src="./assets/room18.jpg" height="200" width="200" alt="Room 8" />
+        </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a routerLink="/registration">
+            <img src="./assets/room19.jpg" height="200" width="200" alt="Room 9" />
+        </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a routerLink="/registration">
+            <img src="./assets/room11.jpg" height="200" width="200" alt="Room 10" />
+        </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+
+    <div class="contact">
+        <div class="container p-5 my-5 border">
+            <div class="header">
+                <h3><a name="contact">Contact Us</a></h3>
+            </div>
+            <form>
+                <div class="form-group">
+                    <!-- Your contact information -->
+                    <label><i class="fa fa-home"><br><b>&nbsp;Address:Chennai</b></i></label><br>
+                    <label><i class="fa fa-phone"><b>&nbsp;+8888888888 Mon to fri 9am to 6pm:</b></i></label><br>
+    
+                    <label><i class="fa fa-box"><b>&nbsp;supportsupport.com send us youe query
+                                anytime</b></i></label><br>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497511.23105245834!2d79.8793260295672!3d13.04798594977182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b6863d433!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1711041438020!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           
+    </div>
+
+    <br>
+
+    <div style="background-color:#734d26;padding-bottom:30px">
+        <footer style="color:white;">
+            <em>
+                <h4 class="text-center">
+                    All Rights Reserved &copy; 2024
+                </h4>
+            </em>
+        </footer>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<h2 id="a">BookRoom List</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>userEmail</th>
+            <th> roomType</th>
+            <th>cost</th>
+            <th> paymentMethod</th>
+             
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of bookroom">
+            <td>{{room.userEmail}}</td>
+            <td>{{room.roomType}}</td>
+            <td>{{room.cost}}</td>
+            <td>{{room.paymentMethod}}</td>
+
+            <td>
+                <button (click) = "deleteBookRooms(room.roomId)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+                <button (click) = "BookRooms(room.roomId)" class = "btn btn-info" style="margin-left: 10px"> View</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

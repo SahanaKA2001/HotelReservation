@@ -1,0 +1,92 @@
+/* Add your custom styles here */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.navbar {
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+}
+
+
+.navbar-dark .navbar-nav .nav-link {
+    
+    color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+   
+    color: #f8f9fa;
+}
+
+.marquee {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    overflow: hidden;
+}
+.image {
+    text-align: center;
+}
+
+.gallery,
+.gallery2 {
+ display: flex;
+ justify-content: space-evenly;
+ flex-wrap: wrap;
+ margin-top: 20px;
+}
+.gallery img,
+.gallery2 img {
+ margin-bottom: 20px;
+}
+.gallery a img,
+.gallery2 a img {
+ transition: transform 0.3s ease-in-out;
+}
+.gallery a img:hover,
+.gallery2 a img:hover {
+ transform: scale(1.1);
+}
+
+.contact {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.map {
+    text-align: center;
+    margin-top: 50px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* style.css */
+
+/* Add some padding to the navbar 
+.navbar {
+    padding: 10px;
+}*/
+
+/* Style the dropdown menu 
+.dropdown-menu {
+    border: 1px solid #ddd; /* Add a border to separate the menu from the rest of the page 
+}*/
+
+/* Style the dropdown items 
+.dropdown-item {
+    color: #333; /* Set the text color 
+    */
+
+/* Highlight the dropdown items on hover 
+.dropdown-item:hover {
+    background-color: #f8f9fa; /* Set a background color on hover 
+    color: #007bff; /* Change text color on hover 
+}*/

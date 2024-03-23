@@ -1,0 +1,41 @@
+<div class="col-md-6 offset-md-3">
+    <h3>Create User</h3>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>userFirstName</label>
+            <input type="text" class="form-control" id="username" [(ngModel)]="userinfo.userFirstName" name="userFirstName">
+
+            <div class="form-group">
+                <label>userLastName</label>
+                <input type="text" class="form-control" id="username" [(ngModel)]="userinfo.userLastName"name="userLastName">
+
+            </div>
+            <div class="form-group">
+                <label>userEmail</label>
+                <input type="text" class="form-control" id="password" [(ngModel)]="userinfo.userEmail" name="userEmail">
+
+            </div>
+            <div class="form-group">
+                <label>userAge</label>
+                <input type="text" class="form-control" id="email" [(ngModel)]="userinfo.userAge" name="userAge">
+            </div>
+            <div class="form-group">
+                <label>userContactNumber</label>
+                <input type="text" class="form-control" id="password" [(ngModel)]="userinfo.userContactNumber "name="userContactNumber">
+            </div>
+            <div class="form-group">
+                <label>userGender</label>
+                <input type="text" class="form-control" id="password" [(ngModel)]="userinfo.userGender" name="userGender">
+            </div>
+            <div class="form-group">
+                <label> userCountry</label>
+                <input type="text" class="form-control" id="password" [(ngModel)]="userinfo.userCountry"name="userCountry">
+            </div>
+            <div class="form-group">
+                <label>userState</label>
+                <input type="text" class="form-control" id="password" [(ngModel)]="userinfo.userState" name="userState">
+            </div>
+            <button class="btn-btn-success" type="submit">SUBMIT</button>
+            </div>
+    </form>
+</div>

@@ -1,0 +1,57 @@
+<div class="col-md-6 offset-md-3">
+    <h3>Create User</h3>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>userEmail</label>
+            <input type="text" class="form-control" id="userEmail" [(ngModel)]="room.userEmail" name="userEmail">
+
+        </div>
+        <div class="form-group">
+            <label>roomId</label>
+            <input type="text" class="form-control" id="userroomId" [(ngModel)]="room.roomId" name="userroomId">
+
+        </div>
+        <div class="form-group">
+            <label>cost</label>
+            <input type="text" class="form-control" id="cost" [(ngModel)]="room.cost" name="cost">
+
+            <div class="form-group">
+                <label>paymentMethod</label>
+                <input type="text" class="form-control" id="paymentMethod" [(ngModel)]="room.paymentMethod"
+                    name="paymentMethod">
+
+                <div class="form-group">
+                    <label>debitCardNumber</label>
+                    <input type="text" class="form-control" id="debitCardNumber" [(ngModel)]="room.debitCardNumber"
+                        name="debitCardNumber">
+
+                    <div class="form-group">
+                        <label>cvv</label>
+                        <input type="text" class="form-control" id="cvv" [(ngModel)]="room.cvv" name="cvv">
+
+                        <div class="form-group">
+                            <label>bankName</label>
+                            <input type="text" class="form-control" id="bankName" [(ngModel)]="room.bankName"
+                                name="bankName">
+
+                            <div class="form-group">
+                                <label>bankAccountHolderName</label>
+                                <input type="text" class="form-control" id="bankAccountHolderName"
+                                    [(ngModel)]="room.bankAccountHolderName" name="bankAccountHolderName">
+
+                                <div class="form-group">
+                                    <label> accountNumber!:number;
+                                    </label>
+                                    <input type="text" class="form-control" id="accountNumber"
+                                        [(ngModel)]="room.accountNumber" name="accountNumber">
+
+                                </div>
+                                <button class="btn-btn-success" type="submit">SUBMIT</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div> 

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Room</title>
+    <link rel="stylesheet" href="create-room.component.css">
+</head>
+<body>
+
+<div class="col-md-6 offset-md-3">
+    <h3>Create Room</h3>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>RoomType</label>
+            <input type="text" class="form-control" id="roomType" [(ngModel)]="room.roomType" name="roomType">
+        </div>
+        <div class="form-group">
+            <label>TotalRooms</label>
+            <input type="text" class="form-control" id="usertotalRooms" [(ngModel)]="room.totalRooms" name="usertotalRooms">
+        </div>
+        <div class="form-group">
+            <label>Cost</label>
+            <input type="text" class="form-control" id="cost" [(ngModel)]="room.cost" name="cost">
+        </div>
+        <div class="form-group">
+            <label>Available Rooms</label>
+            <input type="text" class="form-control" id="availableRooms" [(ngModel)]="room.availableRooms" name="availableRooms">
+        </div>
+        <div class="form-group">
+            <label>Room Rating</label>
+            <input type="text" class="form-control" id="roomRating" [(ngModel)]="room.roomRating" name="roomRating">
+        </div>
+        <button type="submit" class="btn btn-success" (click)="onSubmit()">Submit</button>
+    </form>
+</div>
+</body>
+</html>

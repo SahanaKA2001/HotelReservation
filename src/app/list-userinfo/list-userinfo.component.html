@@ -1,0 +1,46 @@
+<h2 id="a">User List</h2>
+<body>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>user FirstName</th>
+            <th>user LastName</th>
+            <th>user Email</th>
+            <th>user Age</th>
+            <th>user ContactNumber</th>
+            <th>user Gender</th>
+            <th>user Country</th>
+            <th>user State</th>
+            <th>User District</th>
+            <th>User Pincode</th>
+            <th>Action</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of userinfos">
+            <td>{{user.userFirstName}}</td>
+            <td>{{user.userLastName}}</td>
+            <td>{{user.userEmail}}</td>
+            <td>{{user.userAge}}</td>
+            <td>{{user.userContactNumber}}</td>
+            <td>{{user.userGender}}</td>
+            <td>{{user.userCountry}}</td>
+            <td>{{user.userState}}</td>
+            <td>{{user.userDistrict}}</td>
+            <td>{{user.userPincode}}</td>
+
+
+            <td>
+                <!--<button (click) = "updateUserinfo(user.userId)" class = "btn btn-info"> Update</button>-->
+               
+                <button (click) = "userinfo(user.userId)" class = "btn btn-info" style="margin-left: 10px"> View</button>
+            </td>
+        <td>
+                <button (click) = "deleteUserinfo(user.userId)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+            </td>
+        </tr>
+        
+    </tbody>
+</table>
+</body>

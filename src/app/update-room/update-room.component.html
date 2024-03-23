@@ -1,0 +1,28 @@
+<div class="col-md-6 offset-md-3">
+    <h3>Create User</h3>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>roomType</label>
+            <input type="text" class="form-control" id="roomType" [(ngModel)]="room.roomType" name="roomType">
+
+            <div class="form-group">
+                <label>totalRooms</label>
+                <input type="text" class="form-control" id="totalRooms" [(ngModel)]="room.totalRooms"name="totalRooms">
+
+            </div>
+            <div class="form-group">
+                <label>cost</label>
+                <input type="text" class="form-control" id="cost" [(ngModel)]="room.cost" name="cost">
+
+            </div>
+            <div class="form-group">
+                <label>availableRooms</label>
+                <input type="text" class="form-control" id="availableRooms" [(ngModel)]="room.availableRooms" name="availableRooms;">
+        
+
+            </div>
+
+            <button class="btn-btn-success" type="submit">SUBMIT</button>
+            </div>
+    </form>
+</div>

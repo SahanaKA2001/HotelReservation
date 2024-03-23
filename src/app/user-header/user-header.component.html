@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room List</title>
+    <link rel="stylesheet" href="user-header.component.css">
+</head>
+<body>
+
+<h2 id="a">Room List</h2>
+
+<form>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Room Type</th>
+                <th>Total Rooms</th>
+                <th>Cost</th>
+                <th>Available Rooms</th>
+                <th>Room Rating</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let user of room; let i=index">
+
+                <td><img src="./assets/room{{i + 11}}.jpg"></td> 
+                <td>{{user.roomType}}</td>
+                <td>{{user.totalRooms}}</td>
+                <td>{{user.cost}}</td>
+                <td>{{user.availableRooms}}</td>
+                <td>{{user.roomRating}}</td>
+                <td>
+                    <button (click)="Rooms(user.roomId)" class="btn btn-info" style="margin-left: 10px">
+                        Book Room
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="form-group1 d-flex justify-content-end">
+        <button type="submit" id="btnsubmit" class="btn btn-success" (click)="goToHome()">
+            <i class="fa fa-user"></i> Logout
+        </button>
+    </div>
+</form>
+
+</body>
+</html>

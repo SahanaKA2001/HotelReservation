@@ -1,0 +1,25 @@
+<p>list-user works!</p>
+<h2 id="a">User List</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>User Name</th>
+            <th>Password</th>
+            <th>Email</th>
+            <th>Action</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td>{{user.userName}}</td>
+            <td>{{user.userPassword}}</td>
+            <td>{{user.userEmail}}</td>
+            <td>
+                <button (click) = "updateUser(user.userId)" class = "btn btn-info"> Update</button>
+                <button (click) = "deleteUser(user.userId)" class = "btn btn-danger" style="margin-left: 10px"> Delete</button>
+                <button (click) = "userDetails(user.userId)" class = "btn btn-info" style="margin-left: 10px"> View</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="container p-3 col-md-4 offset-md-4 border">
+  <div class="header text-center"><h3> User Login</h3></div>
+  <form (ngSubmit)="onSubmit()" [formGroup]="loginForm">
+    <div class="form-group">
+      <label><i class="fa fa-user">&nbsp;User Name</i></label>
+      <input type="text" class="form-control" formControlName="userName"><br>
+
+      <label><i class="fa fa-eye">&nbsp;Password</i></label><br>
+      <input type="password" class="form-control" formControlName="userPassword"><br>
+    </div>
+
+    <div class="form-group1 col-sm-offset-md-3">
+      <button type="submit" id="btnsubmit" class="btn btn-success mx-5"><i class="fa fa-check"> Login </i></button>
+      <button type="reset" id="btnreset" class="btn btn-danger"> <i class="fa fa-refresh"> Reset </i> </button><br>
+    </div>
+  </form>
+</div>
+
+<div class="center-text">
+  Don't have an account? <a routerLink="/registration">Register here</a>
+</div>
+</body>

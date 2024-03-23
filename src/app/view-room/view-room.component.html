@@ -1,0 +1,29 @@
+<h2 id="a">Room List</h2>
+<form>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Image</th>
+            <th> roomType</th>
+            <th>total Rooms</th>
+            <th>cost</th>
+            <th> available Rooms</th>
+             <th> room Rating</th>    
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of room">
+            <td><img src="./assets/room11.jpg"/></td>
+            <td>{{user.roomType}}</td>
+            <td>{{user.totalRooms}}</td>
+            <td>{{user.cost}}</td>
+            <td>{{user.availableRooms}}</td>
+            <td>{{user.roomRating}}</td>
+            <td>
+                <button type="submit" (click)="Rooms(user.roomId)" class="btn btn-lg mb-2">Book Room</button>
+            </td>
+        </tr>
+        
+    </tbody>
+</table> 
+</form>
